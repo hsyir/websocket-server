@@ -128,5 +128,16 @@
                 </div>
             </div>
         </div>
+
+        <script src="/js/app.js"></script>
+        <script>
+
+            Echo.channel("hsyChannel")
+            .listen("NewMessage",e=>{
+                console.log(e.message);
+            })
+
+        </script>
     </body>
+
 </html>
